@@ -1,1 +1,3 @@
-如何初始化一个 npm 脚手架的代码仓库
+- 如何初始化一个 npm 脚手架的代码仓库
+- 使用 pnpm 如何 link
+  - https://zhuanlan.zhihu.com/p/585596573

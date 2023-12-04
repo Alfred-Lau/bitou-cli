@@ -1,64 +1,69 @@
 import { Command } from 'commander'
 import diagnose from './plugins/diagnose'
-import check from './plugins/check'
-import sync from './plugins/sync'
-import test from './plugins/test'
+import performance from './plugins/performance'
 import seo from './plugins/seo'
 
 const program = new Command();
 
 const commands = [
   {
-    name: 'diagnose',
-    description: 'diagnose a project',
-    option: ['--seo', 'diagnose mode'],
-    argument: ['<project>', 'bigfish project'],
+    name: 'init',
+    description: 'init a page base on template',
+    option: [['--type', 'template type']],
+    argument: ['<name>', 'page name'],
     action: diagnose
   },
+  // 项目线上问题巡检，线下问题排查
   {
-    name: 'check',
-    description: 'check a project',
-    option: ['--seo', 'check mode'],
-    argument: ['<project>', 'bigfish project'],
-    action: check
+    name: 'diagnose',
+    description: 'diagnose a project',
+    option: [['--seo', 'diagnose mode']],
+    argument: ['<project>', 'umi project'],
+    action: diagnose
   },
+  // 测试页面SEO
   {
     name: 'seo',
     description: 'check a project',
-    option: ['--sitemap', 'check mode'],
-    argument: ['<project>', 'bigfish project'],
+    option: [['--sitemap', 'check mode', ''], ['--offline', 'check code ', ''], ['--online', 'check rendered content ', '']],
+    argument: ['<project>', 'umi project'],
     action: seo
   },
+  // 测试页面性能
   {
-    name: 'sync',
-    description: 'sync a project',
-    option: ['--seo', 'sync mode'],
-    argument: ['<project>', 'bigfish project'],
-    action: sync
-  }, {
-    name: 'test',
-    description: 'test a project',
-    option: ['--seo', 'test mode'],
-    argument: ['<project>', 'bigfish project'],
-    action: test
+    name: 'performance',
+    description: 'performance a project',
+    option: [['--vital', 'performance mode']],
+    argument: ['url', 'target page url'],
+    action: performance
   },
 ]
 
 
 export default function main() {
   program
-    .name('ofx')
-    .description('CLI For OceanBase FEX')
+    .name('bitou')
+    .description('CLI For bitou architecture')
     .version('0.1.0');
 
   // 子命令：诊断
 
   commands.forEach(command => {
-    program
+    const p = program
       .command(command.name)
       .description(command.description)
-      .option(command.option[0], command.option[1])
-      .argument(command.argument[0], command.argument[1])
+
+    if (Array.isArray(command.option)) {
+      for (let i = 0; i < command.option.length; i++) {
+        const option = command.option[i] as string[];
+        p.option(option[0], option[1])
+      }
+    } else {
+      p.option(command.option[0], command.option[1])
+    }
+
+
+    p.argument(command.argument[0], command.argument[1])
       .action(command.action)
   })
 
