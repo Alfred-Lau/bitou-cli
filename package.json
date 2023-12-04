@@ -1,0 +1,55 @@
+{
+  "name": "@bitou/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "dependencies": {
+    "@babel/generator": "^7.18.13",
+    "@babel/parser": "^7.18.13",
+    "@babel/traverse": "^7.18.13",
+    "@babel/types": "^7.18.13",
+    "commander": "^9.4.0",
+    "ejs": "^3.1.9",
+    "fetch": "^1.1.0",
+    "moment": "^2.29.4"
+  },
+  "bin": {
+    "bitou": "bin/index.js"
+  },
+  "devDependencies": {
+    "@eggjs/tsconfig": "^1.0.0",
+    "@types/mocha": "^5.0.0",
+    "@types/node": "^9.4.5",
+    "@types/power-assert": "^1.4.29",
+    "egg-bin": "^4.3.7",
+    "eslint": "^8.0.0",
+    "eslint-config-egg": "^10.0.0",
+    "prettier": "^2.6.0",
+    "typescript": "^4.5.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "autod": "autod",
+    "lint": "eslint . --ext .ts",
+    "test": "pnpm run lint -- --fix && egg-bin pkgfiles && pnpm run test-local",
+    "test-local": "egg-bin test --ts",
+    "cov": "egg-bin cov --ts",
+    "ci": "pnpm run lint && egg-bin pkgfiles --check && pnpm run cov",
+    "clean": "tsc -b --clean",
+    "tsc": "tsc -b ./tsconfig.json",
+    "tsc:w": "pnpm run tsc -- -w",
+    "link": "pnpm run tsc && pnpm link",
+    "prepublishOnly": "pnpm run clean && pnpm run tsc",
+    "pkgfiles": "egg-bin pkgfiles"
+  },
+  "author": "",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}

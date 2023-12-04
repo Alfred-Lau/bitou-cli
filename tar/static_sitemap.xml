@@ -1,0 +1,627 @@
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <url>
+ 
+   <loc> https://www.oceanbase.com</loc>
+   <priority> 1</priority>
+   <lastmod> 2023-02-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/whitepaper</loc>
+   <priority> 0.9</priority>
+   <lastmod> 2023-02-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/knowledge-base</loc>
+   <priority> 0.9</priority>
+   <lastmod> 2023-02-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news</loc>
+   <priority> 0.9</priority>
+   <lastmod> 2023-02-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/customer/home</loc>
+   <priority> 0.9</priority>
+   <lastmod> 2023-02-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/oceanbase-wins-the-prize-ant-group-was-selected-as-the</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-11-11</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/apsaradb-rds-for-mysql-v4-0-was-officially-released-making-mysql</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-11-04</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/secure-and-trustworthy-oceanbase-passed-the-soc2-audit-standard-and</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-11-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/authoritative-recognition-apsaradb-for-oceanbase-is-validated-by-the-distributed</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-10-24</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/in-0-707-billion-the-technical-breakthrough-behind-the-tpc-c-was</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-09-28</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/oceanbase-won-two-oscar-awards-open-source-has-become-the</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-09-28</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/warmly-congratulate-to-oss-on-winning-2022-idc-china-future</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-09-28</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/2022-oceanbase-annual-conference-four-strategies-released-entering-the-4-0</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-08-17</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/rx4erk</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-07-27</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ly37vv</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-07-27</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ix59fz</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-07-27</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/guaqfk</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-07-06</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/bhrzwu</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-06-21</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/hmwcto</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/lc604i</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-06-10</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ryu5dh</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-06-10</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/iz0gd8</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-06-10</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/nh7fv1</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-06-08</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/nb7igp</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-05-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ozue34</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-05-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ytsi5e</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-05-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/bq20ll</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-05-06</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ihthpo</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-05-06</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/asqg4b</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-05-06</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/tfi17q</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-05-06</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/scwsem</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-24</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/hs803y</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-15</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/zrz2qa</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-15</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/dkm6ui</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-14</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ke7t91</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-18</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/yggot8</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-18</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/msd7co</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-14</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/lfz9gw</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-03-04</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/epkz0q</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-03-04</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/byq275</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-02-28</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/otzha5</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-02-15</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/aagswt</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-02-15</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/comprehensively-improve-systematic-data-management-capabilities-oceanbase-released-the</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-01-21</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/news-center</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-01-21</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/double-leap-in-availability-and-ease-of-use-oceanbase</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-01-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/oceanbase-2021-annual-report-use-technology-to-simplify-the</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/from-the-2021-distributed-database-developer-conference-we-found-these</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-01-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/the-first-in-the-country-oceanbase-helps-jiangxi-provincial-endowment</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-01-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/for-the-first-time-dialogue-between-time-and-space-between</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-01-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/oceanbase-cooperates-with-shandong-mobile-to-win-awards-it-was</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-12-22</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/the-top-20-is-born-the-2021-oceanbase-database-contest</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-12-22</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/li-jianfeng-chief-expert-of-sinopec-informatization-digitalization-localization-and</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-12-22</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/the-top-50-east-china-normal-university-in-the-database</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-12-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/renmin-university-of-china-top-50-database-contest-cultivating-engineering</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-12-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/have-you-received-your-package-after-chopping-hands-on-double</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-12-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/new-success-oceanbase-included-in-forrester-s-first-distributed-database-report</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-04-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/the-future-of-co-building-databases-2021-oceanbase-native-distributed</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-11-02</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/accelerated-embrace-and-support-of-open-source-ecosystem-oceanbase-open-source</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-11-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/oceanbase-3-2-released-htap-system-is-more-advanced-and</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-11-01</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/the-first-release-of-innovation-plan-yang-bing-ceo</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-09-15</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/dishi-and-oceanbase-have-achieved-strategic-cooperation-to-accelerate-digital</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-08-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/star-of-science-and-technology-oceanbase-s-11-year-dream-building</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-08-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/oceanbase-x-has-a-premium-in-chengdu-holding-the</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-08-13</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/pkhvuk</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ry9k73</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ekzkz0</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/gksak1</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/lb4rpa</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/frs0rq</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ef9iae</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ugc83f</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/usaxcz</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ggz6rl</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/gkrqf8</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ik4h64</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/eglsrq</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/fky1z7</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ykozqt</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/orkb58</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/xyz0yz</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/pg37li</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ghoq02</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/sy9qg6</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/pgz8pw</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/mreopp</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/nzg6bg</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/sae92g</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/rmgzfn</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/xxg7r2</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/gvsc88</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/vm4iim</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/bgvkwt</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/yqi5zx</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/nzr39k</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/dzq2u2</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ko0sil</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/da0d8m</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ygeo66</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/nbl6pk</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/vnfmxe</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/uy9k6m</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/xsrbti</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/zne7ff</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ar32ht</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/lkcg93</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/yh8i6l</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/cql87o</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/htktix</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/qkbz9z</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/gyi9lv</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/anm9gt</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/lzt16z</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/qds4bg</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/oi1194</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/tkwdiw</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/ug8iiv</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/xai1ay</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/crd3i6</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/news/uxvq4v</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2021-06-16</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/whitepaper/native-distributed-database-trend-gartner</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2023-03-14</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/whitepaper/china-distributed-database-development-idc</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2023-03-14</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/whitepaper/distributed-database-satisfaction-research</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2023-03-14</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/whitepaper/oceanbase-product</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2023-03-14</lastmod>
+   <changefreq>daily</changefreq>
+ 
+   <loc> https://www.oceanbase.com/whitepaper/distributed-database-trends</loc>
+   <priority> 0.7</priority>
+   <lastmod> 2022-11-02</lastmod>
+   <changefreq>daily</changefreq>
+ 
+ </url>
+</urlset>      
+
