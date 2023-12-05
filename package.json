@@ -17,7 +17,8 @@
     "ejs": "^3.1.9",
     "fetch": "^1.1.0",
     "moment": "^2.29.4",
-    "puppeteer": "^21.5.2"
+    "puppeteer": "^21.5.2",
+    "shelljs": "^0.8.5"
   },
   "bin": {
     "bitou": "bin/index.js"
@@ -27,6 +28,7 @@
     "@types/mocha": "^5.0.0",
     "@types/node": "^9.4.5",
     "@types/power-assert": "^1.4.29",
+    "@types/shelljs": "^0.8.15",
     "egg-bin": "^4.3.7",
     "eslint": "^8.0.0",
     "eslint-config-egg": "^10.0.0",

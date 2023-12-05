@@ -25,8 +25,8 @@ const commands = [
   {
     name: 'seo',
     description: 'check a project',
-    option: [['--sitemap', 'check mode', ''], ['--offline', 'check code ', ''], ['--online', 'check rendered content ', '']],
-    argument: ['<project>', 'umi project'],
+    option: [['--sitemap', 'check mode', ''], ['--precheck', '预热对应的url', ''], ['--aftercheck', '后检相关事项 ', '']],
+    argument: ['url', 'target page url'],
     action: seo
   },
   // 测试页面性能

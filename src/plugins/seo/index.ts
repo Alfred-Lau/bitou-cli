@@ -3,6 +3,8 @@ import ejs from 'ejs'
 import fse from 'fs-extra'
 import moment from 'moment'
 import news from './news.json'
+import precheck from './precheck'
+import afterCheck from './aftercheck'
 // import * as path from 'path'
 
 type RecordType = {
@@ -89,10 +91,39 @@ async function collectData() {
 
 export default async (_name?, _options?, _command?) => {
 
-  console.log('seo', _options)
-  // 采集获取的url
-  const urls = await collectData()
-  const content = ejs.render(tpl, { urls })
-  // 生成map 子文件
-  fse.writeFile(`${__dirname}/tar/static_sitemap.xml`, content, { flag: 'w' })
+  async function sitemapHandler() {
+    // 采集获取的url
+    const urls = await collectData()
+    const content = ejs.render(tpl, { urls })
+    // 生成map 子文件
+    fse.writeFile(`${__dirname}/tar/static_sitemap.xml`, content, { flag: 'w' })
+  }
+
+  function preCheckHandler() {
+    if (precheck) {
+      precheck(_options,)
+    }
+  }
+
+  function afterCheckHandler() {
+    if (afterCheck) {
+      afterCheck(_name)
+    }
+  }
+
+  try {
+    if (_options.aftercheck) {
+      afterCheckHandler()
+    }
+    if (_options.precheck) {
+      preCheckHandler()
+    }
+    if (_options.sitemap) {
+      sitemapHandler()
+    }
+  } catch (error) {
+    console.error(error)
+  }
+
+
 }
