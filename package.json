@@ -1,6 +1,6 @@
 {
   "name": "bitou-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -17,6 +17,7 @@
     "commander": "^9.4.0",
     "ejs": "^3.1.9",
     "fetch": "^1.1.0",
+    "fs-extra": "^11.2.0",
     "moment": "^2.29.4",
     "puppeteer": "^21.5.2",
     "shelljs": "^0.8.5",
