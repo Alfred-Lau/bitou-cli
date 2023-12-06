@@ -63,7 +63,6 @@ async function collectData() {
   // 4. 添加白皮书详情 0.7
   const papers = await fetchWhitePaper()
   const papers_urls = [] as RecordType[]
-  console.log('papers', papers);
 
   papers.forEach(paper => {
     papers_urls.push({

@@ -13,6 +13,7 @@
     "@babel/parser": "^7.18.13",
     "@babel/traverse": "^7.18.13",
     "@babel/types": "^7.18.13",
+    "cheerio": "1.0.0-rc.12",
     "commander": "^9.4.0",
     "ejs": "^3.1.9",
     "fetch": "^1.1.0",
