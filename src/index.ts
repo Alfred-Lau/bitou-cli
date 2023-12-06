@@ -15,7 +15,7 @@ const commands = [
   },
   // 项目线上问题巡检，线下问题排查
   {
-    name: 'diagnose',
+    name: 'diag',
     description: 'diagnose a project',
     option: [['--seo', 'diagnose mode']],
     argument: ['<project>', 'umi project'],
@@ -31,10 +31,10 @@ const commands = [
   },
   // 测试页面性能
   {
-    name: 'performance',
+    name: 'perf',
     description: 'performance a project',
     option: [['--vital', 'performance mode']],
-    argument: ['url', 'target page url'],
+    argument: ['website', 'target website url'],
     action: performance
   },
 ]
