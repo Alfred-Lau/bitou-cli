@@ -1,6 +1,6 @@
 import tpl from './tpl';
 import ejs from 'ejs';
-import * as fse from 'fs-extra';
+import fse from 'fs-extra';
 import precheck from './precheck';
 import afterCheck from './aftercheck';
 

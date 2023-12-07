@@ -1,7 +1,7 @@
-import * as parser from '@babel/parser';
+import parser from '@babel/parser';
 import traverse from '@babel/traverse';
 import generate from '@babel/generator';
-import * as types from '@babel/types';
+import types from '@babel/types';
 
 export default () => {
   const sourceCode = `console.log(1);`;

@@ -1,4 +1,4 @@
-import * as fse from 'fs-extra';
+import fse from 'fs-extra';
 import lighthouse from 'lighthouse';
 import * as chromeLauncher from 'chrome-launcher';
 import { openInBrowser } from '../../utils/browser';
@@ -23,15 +23,15 @@ async function calculateLHR(url: string) {
     fse.writeFileSync('lhreport.html', reportHtml);
     const path = `${process.cwd()}/lhreport.html`;
     await openInBrowser(path);
-    const metrics = runnerResult.lhr.audits.metrics.details as any;
+    const metrics = runnerResult.lhr.audits.metrics.details || ({} as any);
 
     return [
       url,
       score,
-      metrics.items[0].largestContentfulPaint,
-      metrics.items[0].largestContentfulPaint,
-      metrics.items[0].largestContentfulPaint,
-      metrics.items[0].largestContentfulPaint,
+      metrics.items?.[0]?.largestContentfulPaint,
+      metrics.items?.[0]?.largestContentfulPaint,
+      metrics.items?.[0]?.largestContentfulPaint,
+      metrics.items?.[0]?.largestContentfulPaint,
     ];
   }
 

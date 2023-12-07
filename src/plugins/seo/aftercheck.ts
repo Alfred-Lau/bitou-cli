@@ -1,5 +1,5 @@
-import * as shell from 'shelljs';
-import * as cheerio from 'cheerio';
+import shell from 'shelljs';
+import cheerio from 'cheerio';
 
 export default function afterCheck(params) {
   // 1. 检查给定url的页面的爬虫视角
