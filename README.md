@@ -14,12 +14,24 @@
 ```bash
 1. pnpm install
 2. pnpm start
-3. open examples/basic/index.html
 ```
 
 ## how to use
 
 ```bash
-bitou seo -h
+Usage: bitou [options] [command]
+
+CLI For bitou architecture
+
+Options:
+  -V, --version             output the version number
+  -h, --help                display help for command
+
+Commands:
+  init [options] <name>     init a page base on template
+  diag [options] <project>  diagnose a project
+  seo [options] <url>       check a project
+  perf [options] <website>  performance a project
+  help [command]            display help for command
 
 ```
