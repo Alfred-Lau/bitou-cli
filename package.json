@@ -1,6 +1,6 @@
 {
   "name": "bitou-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "dist/bitou.js",
   "type": "module",
@@ -69,7 +69,7 @@
     "tsc": "tsc -b ./tsconfig.json",
     "tsc:w": "pnpm run tsc -w",
     "link": "pnpm run tsc && pnpm link",
-    "prepublishOnly": "pnpm run clean && pnpm run tsc",
+    "prepublishOnly": "pnpm run clean && pnpm run build",
     "pkgfiles": "egg-bin pkgfiles"
   },
   "author": "",

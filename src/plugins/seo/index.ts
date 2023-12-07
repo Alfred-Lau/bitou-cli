@@ -1,11 +1,11 @@
 import tpl from './tpl';
 import ejs from 'ejs';
-import fse from 'fs-extra';
+import * as fse from 'fs-extra';
 import precheck from './precheck';
 import afterCheck from './aftercheck';
 
 async function collectData() {
-  return []
+  return [];
 }
 
 export default async (_name?, _options?, _command?) => {
@@ -14,7 +14,7 @@ export default async (_name?, _options?, _command?) => {
     const urls = await collectData();
     const content = ejs.render(tpl, { urls });
     // 生成map 子文件
-    fse.writeFile(`${__dirname}/tar/static_sitemap.xml`, content, {
+    fse.writeFileSync(`${__dirname}/tar/static_sitemap.xml`, content, {
       flag: 'w',
     });
   }
