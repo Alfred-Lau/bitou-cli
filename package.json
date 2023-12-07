@@ -74,5 +74,18 @@
   },
   "author": "",
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alfred-Lau/bitou-cli.git"
+  },
+  "keywords": [
+    "seo",
+    "performance",
+    "lighthouse",
+    "cli"
+  ],
+  "bugs": {
+    "url": "https://github.com/Alfred-Lau/bitou-cli/issues"
+  },
+  "homepage": "https://github.com/Alfred-Lau/bitou-cli#readme"
 }
