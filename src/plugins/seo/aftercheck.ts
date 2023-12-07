@@ -8,6 +8,7 @@ export default function afterCheck(params) {
     const content = shell.exec(`curl ${params} -H 'User-Agent: baiduspider'`, {
       silent: true
     })
+
     const $ = cheerio.load(content.stdout)
     // 1. check hn 的问题
     const h1_length = $('h1').length

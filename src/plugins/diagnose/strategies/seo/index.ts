@@ -1,4 +1,4 @@
-const parser = require('@babel/parser');
+import parser from '@babel/parser'
 import traverse from '@babel/traverse'
 import generate from '@babel/generator'
 import types from '@babel/types'

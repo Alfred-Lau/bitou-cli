@@ -3,6 +3,5 @@ export default function afterCheck(params) {
   // 1. 检查给定url的页面的爬虫视角
   if (typeof params === 'string') {
     console.log('检查给定url的页面的爬虫视角')
-    // curl https://www.oceanbase.com/demo  -H 'User-Agent: baiduspider'
   }
 }

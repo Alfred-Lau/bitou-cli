@@ -1,20 +1,17 @@
+import calculateLHR from "./lhr";
 import showTable from "./show";
 
-
-export default (name, options, command) => {
+export default async (name, options, command) => {
 
   if (options.debug) {
     console.error('Called %s with options %o', command.name(), options);
   }
-  const title = options.title ? `${options.title} ` : '';
-  console.log(`Thank-you ${title}${name}， `);
 
+  let collected = [
+    ["page url", "perf score", "lcp", "fid", "cls", "ttfb"]
+  ] as any
 
-  const data = [
-    ["page url", "perf score", "lcp", "fid", "cls", "ttfb"],
-    [name, 10, "F", "D", 10, "F"],
-    [name, "H", "I", "D", 10, "F"],
-  ]
-  showTable(data)
-
+  const item = await calculateLHR(name)
+  collected.push(item)
+  showTable(collected)
 }

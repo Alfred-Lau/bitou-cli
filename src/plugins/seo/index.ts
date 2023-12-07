@@ -1,87 +1,11 @@
 import tpl from './tpl';
 import ejs from 'ejs';
 import fse from 'fs-extra';
-import moment from 'moment';
 import precheck from './precheck';
 import afterCheck from './aftercheck';
 
-type RecordType = {
-  url: string;
-  priority: number;
-  lastmod: string;
-  changefreq: 'daily';
-};
-
-const WHITE_PAPER_URl =
-  'https://webapi.oceanbase.com/api/whitePaper/queryWhitePaper';
-
-const fetchWhitePaper = async () => {
-  let papers;
-  try {
-    papers = await (await fetch(WHITE_PAPER_URl, { method: 'POST' })).json();
-  } catch (error) {
-    console.error(error);
-  }
-  return papers?.data || [];
-};
-
-// const items = [{}]
-
 async function collectData() {
-  const urls = [] as RecordType[];
-  // 1. 添加首页 1
-  urls.push({
-    url: 'https://www.oceanbase.com',
-    priority: 1,
-    lastmod: '2023-02-01',
-    changefreq: 'daily',
-  });
-  // 2. 添加专题聚合页 0.9
-  urls.push(
-    {
-      url: 'https://www.oceanbase.com/whitepaper',
-      priority: 0.9,
-      lastmod: '2023-02-01',
-      changefreq: 'daily',
-    },
-    {
-      url: 'https://www.oceanbase.com/knowledge-base',
-      priority: 0.9,
-      lastmod: '2023-02-01',
-      changefreq: 'daily',
-    },
-    {
-      url: 'https://www.oceanbase.com/news',
-      priority: 0.9,
-      lastmod: '2023-02-01',
-      changefreq: 'daily',
-    },
-    {
-      url: 'https://www.oceanbase.com/customer/home',
-      priority: 0.9,
-      lastmod: '2023-02-01',
-      changefreq: 'daily',
-    }
-  );
-  // 3. 添加专题页详情 0.8
-  // 4. 添加白皮书详情 0.7
-  const papers = await fetchWhitePaper();
-  const papers_urls = [] as RecordType[];
-
-  papers.forEach((paper) => {
-    papers_urls.push({
-      url: `https://www.oceanbase.com/whitepaper/${paper.urlSuffix}`,
-      priority: 0.7,
-      lastmod: moment(paper.gmtModified).format('YYYY-MM-DD'),
-      changefreq: 'daily',
-    });
-  });
-  // 5. 添加其他 0.6
-  // 6. 添加动态页面
-  const news_url = [] as RecordType[];
-
-  urls.push(...news_url, ...papers_urls);
-  return urls;
+  return []
 }
 
 export default async (_name?, _options?, _command?) => {
