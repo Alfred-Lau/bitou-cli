@@ -4,3 +4,5 @@
   - https://zhuanlan.zhihu.com/p/585596573
 
 - 之前遇到的无法识别模块的问题大概率是 文件扩展名没有被识别导致
+
+- git 处理冲突切出来分支之后要 继续 git rebase --continue
