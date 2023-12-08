@@ -10,16 +10,21 @@ export default function afterCheck(params) {
 
     const $ = cheerio.load(content.stdout);
     // 1. check hn 的问题
-    const h1_length = $('h1').length;
-    const h2_length = $('h2').length;
+    const h1_length = $('h1').length
+    console.log('h1:', h1_length, $('h1').text())
+
     $('h2').each((index, element) => {
-      console.log('index', index);
-      const text = $(element).text();
-      console.log('element', text);
-    });
+      const text = $(element).text()
+      console.log('h2:', text)
+    })
 
-    console.log('h1_length', h1_length, h2_length);
-
+    for (let i = 2; i < 7; i++) {
+      const hn = `h${i}`
+      $(hn).each((index, element) => {
+        const text = $(element).text()
+        console.log(hn, text)
+      })
+    }
     // 2. check tdk 的问题
     // 3. check 内链的问题
     // 4. check 外链的问题
