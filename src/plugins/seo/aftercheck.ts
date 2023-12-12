@@ -41,13 +41,21 @@ export default function afterCheck(params) {
     if (!keywords) {
       errors.push('keywords 不存在')
     }
+    console.log('title:', title)
+    console.log('description:', description)
+    console.log('keywords:', keywords)
+    console.log('tdk 检查结束... ...', `\n\n\n`)
+
     // 3. check 内链的问题
     // 3.1 a 标签的问题
     const a_length = $('a').length
+    console.log('包含内链 a:', a_length)
     // 4. check 外链的问题
     //  5. check img 的问题
     const imgs = $('img')
     const img_length = imgs.length
+    console.log('包含图片:', img_length)
+
     const img_errors = []
     imgs.each((index, element) => {
       const src = $(element).attr('src')
