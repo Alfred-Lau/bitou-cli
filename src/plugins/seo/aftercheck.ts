@@ -8,6 +8,8 @@ export default function afterCheck(params) {
       silent: true,
     });
 
+    const errors = []
+
     const $ = cheerio.load(content.stdout);
     // 1. check hn 的问题
     const h1_length = $('h1').length
@@ -26,8 +28,35 @@ export default function afterCheck(params) {
       })
     }
     // 2. check tdk 的问题
+    console.log('tdk 检查中... ...')
+    const title = $('title').text()
+    const description = $('meta[name="description"]').attr('content')
+    const keywords = $('meta[name="keywords"]').attr('content')
+    if (!title) {
+      errors.push('title 不存在')
+    }
+    if (!description) {
+      errors.push('description 不存在')
+    }
+    if (!keywords) {
+      errors.push('keywords 不存在')
+    }
     // 3. check 内链的问题
+    // 3.1 a 标签的问题
+    const a_length = $('a').length
     // 4. check 外链的问题
     //  5. check img 的问题
+    const imgs = $('img')
+    const img_length = imgs.length
+    const img_errors = []
+    imgs.each((index, element) => {
+      const src = $(element).attr('src')
+      const alt = $(element).attr('alt')
+      if (!src) {
+        img_errors.push('img src 不存在')
+      } else if (!alt) {
+        img_errors.push('img alt 不存在')
+      }
+    })
   }
 }
