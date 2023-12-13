@@ -19,7 +19,9 @@ export default {
     resolve({
       extensions: ['.mjs', '.js', '.json', '.node', '.ts'], // 添加 '.ts'
     }),
-    typescript(), // 添加TypeScript插件
+    typescript({
+      outputToFilesystem: true,
+    }), // 添加TypeScript插件
     // shebang(), // 保留文件头部的shebang
     commonjs(), // 将CommonJS模块转换为ES6
     json(), // 允许导入JSON文件
