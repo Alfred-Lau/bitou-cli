@@ -25,7 +25,7 @@ const commands = [
   {
     name: 'seo',
     description: 'check a project',
-    option: [['--sitemap', 'check mode', ''], ['--precheck', '预热对应的url', ''], ['--aftercheck', '后检相关事项 ', '']],
+    option: [['--sitemap', 'check mode', ''], ['--precheck', '预热对应的url', ''], ['--aftercheck', '后检相关事项 ', ''], ['--checkStatusCode301', '检查301', '']],
     argument: ['url', 'target page url'],
     action: seo
   },
