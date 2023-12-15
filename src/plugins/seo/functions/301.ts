@@ -20,7 +20,21 @@ function _handleUrl(target: string) {
 export function _handleFile(target: string) {
   // 处理文件
   const content = fse.readFileSync(target, 'utf-8')
-  console.log(content)
+  const urls = content.split('\n').filter(item => item)
+  const result = []
+  urls.forEach(url => {
+    shell.exec(`curl -I ${url} | grep "HTTP/1.1 301" `, { silent: true }, (code, stdout, stderr) => {
+      if (code !== 0) {
+        console.log('Exit code:', code);
+        console.log('Program output:', stdout);
+        console.log('Program stderr:', stderr);
+      } else {
+        console.log(`statusCode for ${url}:`, stdout);
+        result.push(stdout)
+      }
+    }
+    )
+  })
 }
 
 export function _handleScript(target: string) {
@@ -28,8 +42,7 @@ export function _handleScript(target: string) {
 }
 
 export default function checkStatusCode301(name: string) {
-  console.log('checkStatusCode301', name)
-  if (isUrl) {
+  if (isUrl(name)) {
     _handleUrl(name)
     return
   }

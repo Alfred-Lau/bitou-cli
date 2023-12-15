@@ -13,6 +13,7 @@ export default {
   output: {
     file: 'dist/bitou.js', // 输出文件名
     format: 'esm', // 输出格式设置为CommonJS，因为Node.js使用这个格式
+    sourcemap: true, // 生成sourcemap
     banner: '#!/usr/bin/env node', // 为CLI工具添加shebang
   },
   plugins: [
