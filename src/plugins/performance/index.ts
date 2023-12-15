@@ -14,4 +14,5 @@ export default async (name, options, command) => {
   const item = await calculateLHR(name)
   collected.push(item)
   showTable(collected)
+  process.exit(0)
 }
