@@ -1,16 +1,17 @@
 import shell from 'shelljs';
 import fse from 'fs-extra';
 import { isFile, isScript, isUrl } from '@/utils/type';
+import { info } from '@/utils/log';
 
 function handleBatchUrls(urls: string[]) {
   urls.forEach(url => {
     shell.exec(`curl -I ${url} | grep "HTTP/1.1 301" `, { silent: true }, (code, stdout, stderr) => {
       if (code !== 0) {
-        console.log('Exit code:', code);
-        console.log('Program output:', stdout);
-        console.log('Program stderr:', stderr);
+        info('Exit code:', code);
+        info('Program output:', stdout);
+        info('Program stderr:', stderr);
       } else {
-        console.log(`statusCode for ${url}:`, stdout);
+        info(`statusCode for ${url}:`, stdout);
       }
     }
     )
@@ -21,11 +22,11 @@ function handleBatchUrls(urls: string[]) {
 function _handleUrl(target: string) {
   shell.exec(`curl -I ${target} | grep "HTTP/1.1 301" `, { silent: true }, (code, stdout, stderr) => {
     if (code !== 0) {
-      console.log('Exit code:', code);
-      console.log('Program output:', stdout);
-      console.log('Program stderr:', stderr);
+      info('Exit code:', code);
+      info('Program output:', stdout);
+      info('Program stderr:', stderr);
     } else {
-      console.log(`statusCode for ${target}:`, stdout);
+      info(`statusCode for ${target}:`, stdout);
     }
   }
   )

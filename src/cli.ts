@@ -33,7 +33,7 @@ const commands = [
   {
     name: 'perf',
     description: 'performance a project',
-    option: [['--vital', 'performance mode']],
+    option: [['--vital', 'performance mode'], ['--open', 'open in browser']],
     argument: ['website', 'target website url'],
     action: performance
   },

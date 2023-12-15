@@ -1,5 +1,7 @@
 import calculateLHR from "./lhr";
 import showTable from "@/utils/showTable";
+import { openInBrowser } from '@/utils/browser';
+import ora from 'ora'
 
 export default async (name, options, command) => {
 
@@ -7,12 +9,14 @@ export default async (name, options, command) => {
     console.error('Called %s with options %o', command.name(), options);
   }
 
+  const spinner = ora('Calculating performance score').start()
+
   let collected = [
-    ["page url", "perf score", "lcp", "fid", "cls", "ttfb"]
+    ["page url", "perf score", "lcp", "cls", "ttfb"]
   ] as any
 
-  const item = await calculateLHR(name)
-  collected.push(item)
+  const res = await calculateLHR(name)
+  collected.push(res.metrics)
   const config = {
     columns: {
       0: {
@@ -26,6 +30,11 @@ export default async (name, options, command) => {
       },
     },
   };
+  spinner.succeed('Performance score calculated')
   showTable(collected, config)
+  spinner.stop()
+  if (options.open) {
+    await openInBrowser(res.path)
+  }
   process.exit(0)
 }
