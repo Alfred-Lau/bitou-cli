@@ -1,0 +1,1 @@
+export default function checkImgs(params) { }
