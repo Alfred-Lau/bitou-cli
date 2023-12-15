@@ -1,15 +1,13 @@
-import checkExternalLink from "./checkExternalLinks";
-import checkHn from "./checkHn";
-import checkImgs from "./checkImgs";
-import checkInnerLinks from "./checkInnerLinks";
-import checkMeta from "./checkMeta";
-import checkTdk from "./checkTdk";
+import * as checkHn from "./checkHn";
+import * as checkImgs from "./checkImgs";
+import * as checkInnerLinks from "./checkInnerLinks";
+import * as checkMeta from "./checkMeta";
+import * as checkTdk from "./checkTdk";
 
 export const tasks = [
   checkMeta,
   checkTdk,
   checkHn,
   checkInnerLinks,
-  checkExternalLink,
   checkImgs,
 ]
