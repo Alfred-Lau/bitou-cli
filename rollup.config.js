@@ -18,6 +18,10 @@ export default {
   plugins: [
     resolve({
       extensions: ['.mjs', '.js', '.json', '.node', '.ts'], // 添加 '.ts'
+      alias: {
+        // 将'./src'路径重命名为'@'
+        '@': './src',
+      },
     }),
     typescript({
       outputToFilesystem: true,

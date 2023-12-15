@@ -1,15 +1,47 @@
 import shell from 'shelljs';
+import fse from 'fs-extra';
+import { isFile, isScript, isUrl } from '@/utils/type';
 
 
-export default function checkStatusCode301(url: string) {
-  const content = shell.exec(`curl -I ${url} | grep "HTTP/1.1 301" `, { silent: true }, (code, stdout, stderr) => {
+function _handleUrl(target: string) {
+  shell.exec(`curl -I ${target} | grep "HTTP/1.1 301" `, { silent: true }, (code, stdout, stderr) => {
     if (code !== 0) {
       console.log('Exit code:', code);
       console.log('Program output:', stdout);
       console.log('Program stderr:', stderr);
     } else {
-      console.log(`statusCode for ${url}:`, stdout);
+      console.log(`statusCode for ${target}:`, stdout);
     }
   }
   )
+}
+
+
+export function _handleFile(target: string) {
+  // 处理文件
+  const content = fse.readFileSync(target, 'utf-8')
+  console.log(content)
+}
+
+export function _handleScript(target: string) {
+  // 针对脚本，直接执行
+}
+
+export default function checkStatusCode301(name: string) {
+  console.log('checkStatusCode301', name)
+  if (isUrl) {
+    _handleUrl(name)
+    return
+  }
+
+  if (isScript(name)) {
+    _handleScript(name)
+    return
+  }
+
+  if (isFile(name)) {
+    _handleFile(name)
+    return
+  }
+
 }
