@@ -2,6 +2,7 @@ import { Command } from 'commander'
 import diagnose from './plugins/diagnose'
 import performance from './plugins/performance'
 import seo from './plugins/seo'
+import init from './plugins/init';
 
 const program = new Command();
 
@@ -11,7 +12,7 @@ const commands = [
     description: 'init a page base on template',
     option: [['--type', 'template type']],
     argument: ['<name>', 'page name'],
-    action: diagnose
+    action: init
   },
   // 项目线上问题巡检，线下问题排查
   {

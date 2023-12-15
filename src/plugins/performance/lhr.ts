@@ -19,8 +19,8 @@ async function calculateLHR(url: string) {
     const score = runnerResult.lhr.categories.performance.score! * 100;
 
     const reportHtml = runnerResult.report;
-    fse.writeFileSync('lhreport.html', reportHtml);
-    const path = `${process.cwd()}/lhreport.html`;
+    fse.writeFileSync('lhr_report.html', reportHtml);
+    const path = `${process.cwd()}/lhr_report.html`;
     const metrics = runnerResult.lhr.audits.metrics.details || ({} as any);
 
     return {
