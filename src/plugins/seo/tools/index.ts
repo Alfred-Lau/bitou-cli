@@ -1,6 +1,6 @@
 import * as checkHn from "./checkHn";
 import * as checkImgs from "./checkImgs";
-import * as checkInnerLinks from "./checkInnerLinks";
+import * as checkInnerLinks from "./checkLinks";
 import * as checkMeta from "./checkMeta";
 import * as checkTdk from "./checkTdk";
 
