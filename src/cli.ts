@@ -45,7 +45,7 @@ export default function main() {
   program
     .name('bitou')
     .description('CLI For bitou architecture')
-    .version('0.1.0');
+    .version('0.1.4');
 
   // 子命令：诊断
 

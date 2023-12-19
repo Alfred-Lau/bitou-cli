@@ -25,16 +25,16 @@ export function handler($) {
   const config = {
     columns: {
       0: {
-        // width: 10   // Column 0 of width 1
+        width: 10   // Column 0 of width 1
       },
       1: {
-        width: 20, // Column 1 of width 20
+        width: 80, // Column 1 of width 20
       },
       2: {
         width: 20, // Column 1 of width 20
       },
       3: {
-        width: 20, // Column 1 of width 20
+        width: 80, // Column 1 of width 20
       },
 
     },
@@ -43,14 +43,15 @@ export function handler($) {
   const error_config = {
     columns: {
       0: {
-        // width: 10   // Column 0 of width 1
+        width: 10   // Column 0 of width 1
       },
       1: {
-        width: 20, // Column 1 of width 20
+        width: 50, // Column 1 of width 20
       },
       2: {
-        width: 20, // Column 1 of width 20
+        width: 80, // Column 1 of width 20
       },
+
 
     },
   };
@@ -59,4 +60,4 @@ export function handler($) {
   showTable(img_errors, error_config)
 }
 
-export const title = `\n\n检查 img 的问题`
+export const title = `\n\n检查 img 的问题【img 的 alt 属性无特殊规定需要置空】`
