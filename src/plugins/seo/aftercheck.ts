@@ -3,6 +3,7 @@ import cheerio from 'cheerio';
 import ora from 'ora';
 import { tasks } from './tools';
 import { info } from '@/utils/log';
+import summary from './summary';
 
 function reduceTasks(tasks: any[], initialValue?: any) {
   return tasks.reduce((prev, current) => {
@@ -26,8 +27,9 @@ export default function afterCheck(params) {
   const reducedTasks = reduceTasks(tasks, $);
 
   try {
-    reducedTasks.then(() => {
+    reducedTasks.then(async (info: string[]) => {
       spinner.succeed(`\n\n检查完成... ...`);
+      await summary(info);
     })
   } catch (e) {
     spinner.fail('检查失败... ...');
