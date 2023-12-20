@@ -2,7 +2,7 @@ import tpl from './tpl';
 import ejs from 'ejs';
 import fse from 'fs-extra';
 import precheck from './precheck';
-import afterCheck from './aftercheck';
+import postcheck from './postcheck';
 import checkStatusCode301 from './functions/301';
 import checkStatusCode404 from './functions/404';
 
@@ -27,15 +27,15 @@ export default async (_name?, _options?, _command?) => {
     }
   }
 
-  function afterCheckHandler() {
-    if (afterCheck) {
-      afterCheck(_name);
+  function postcheckHandler() {
+    if (postcheck) {
+      postcheck(_name);
     }
   }
 
   try {
-    if (_options.aftercheck) {
-      afterCheckHandler();
+    if (_options.postcheck) {
+      postcheckHandler();
     }
     if (_options.precheck) {
       preCheckHandler();

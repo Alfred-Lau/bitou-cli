@@ -14,7 +14,7 @@ function reduceTasks(tasks: any[], initialValue?: any) {
   }, Promise.resolve());
 }
 
-export default function afterCheck(params) {
+export default function postcheck(params) {
 
   if (typeof params !== 'string') return
 
