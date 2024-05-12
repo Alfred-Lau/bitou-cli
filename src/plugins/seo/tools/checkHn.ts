@@ -4,9 +4,11 @@ import showTable from "@/utils/showTable"
 export function handler($) {
   const hns = [['type', 'text', 'index']]
   // 1. check hn 的问题
-  const h1_length = $('h1').length
-  const text = $('h1').text()
-  hns.push(['h1', text, '1'])
+
+  $('h1').each((index, element) => {
+    const text = $(element).text()
+    hns.push(['h1', text, index])
+  })
 
   $('h2').each((index, element) => {
     const text = $(element).text()
@@ -37,4 +39,4 @@ export function handler($) {
   showTable(hns, config)
 }
 
-export const title = `\n\n检查 hn 的问题`
+export const title = `\n\n检查 hn 的问题【h1 只能出现一个】`
