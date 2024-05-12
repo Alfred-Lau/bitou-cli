@@ -1,12 +1,11 @@
 import fse from 'fs-extra';
 import lighthouse from 'lighthouse';
 import * as chromeLauncher from 'chrome-launcher';
-import { openInBrowser } from '../../utils/browser';
 
 async function calculateLHR(url: string) {
   const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless'] });
   const options = {
-    logLevel: 'info',
+    logLevel: 'silent',
     output: 'html',
     onlyCategories: ['performance'],
     port: chrome.port,
@@ -20,22 +19,22 @@ async function calculateLHR(url: string) {
     const score = runnerResult.lhr.categories.performance.score! * 100;
 
     const reportHtml = runnerResult.report;
-    fse.writeFileSync('lhreport.html', reportHtml);
-    const path = `${process.cwd()}/lhreport.html`;
-    await openInBrowser(path);
+    fse.writeFileSync('lhr_report.html', reportHtml);
+    const path = `${process.cwd()}/lhr_report.html`;
     const metrics = runnerResult.lhr.audits.metrics.details || ({} as any);
 
-    return [
-      url,
-      score,
-      metrics.items?.[0]?.largestContentfulPaint,
-      metrics.items?.[0]?.largestContentfulPaint,
-      metrics.items?.[0]?.largestContentfulPaint,
-      metrics.items?.[0]?.largestContentfulPaint,
-    ];
+    return {
+      path,
+      metrics: [
+        url,
+        score,
+        metrics.items?.[0]?.largestContentfulPaint,
+        metrics.items?.[0]?.cumulativeLayoutShift,
+        metrics.items?.[0]?.timeToFirstByte,
+      ]
+    };
   }
 
-  await chrome.kill();
 }
 
 export default calculateLHR;

@@ -2,6 +2,7 @@ import { Command } from 'commander'
 import diagnose from './plugins/diagnose'
 import performance from './plugins/performance'
 import seo from './plugins/seo'
+import init from './plugins/init';
 
 const program = new Command();
 
@@ -11,7 +12,7 @@ const commands = [
     description: 'init a page base on template',
     option: [['--type', 'template type']],
     argument: ['<name>', 'page name'],
-    action: diagnose
+    action: init
   },
   // 项目线上问题巡检，线下问题排查
   {
@@ -25,7 +26,7 @@ const commands = [
   {
     name: 'seo',
     description: 'check a project',
-    option: [['--sitemap', 'check mode', ''], ['--precheck', '预热对应的url', ''], ['--aftercheck', '后检相关事项 ', '']],
+    option: [['--sitemap', 'check mode', ''], ['--precheck', '预热对应的url', ''], ['--aftercheck', '后检相关事项 ', ''], ['--checkStatusCode301', '检查301', ''], ['--checkStatusCode404', '检查404', '']],
     argument: ['url', 'target page url'],
     action: seo
   },
@@ -33,7 +34,7 @@ const commands = [
   {
     name: 'perf',
     description: 'performance a project',
-    option: [['--vital', 'performance mode']],
+    option: [['--vital', 'performance mode'], ['--open', 'open in browser']],
     argument: ['website', 'target website url'],
     action: performance
   },

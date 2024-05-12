@@ -3,6 +3,8 @@ import ejs from 'ejs';
 import fse from 'fs-extra';
 import precheck from './precheck';
 import afterCheck from './aftercheck';
+import checkStatusCode301 from './functions/301';
+import checkStatusCode404 from './functions/404';
 
 async function collectData() {
   return [];
@@ -40,6 +42,12 @@ export default async (_name?, _options?, _command?) => {
     }
     if (_options.sitemap) {
       sitemapHandler();
+    }
+    if (_options.checkStatusCode301) {
+      checkStatusCode301(_name)
+    }
+    if (_options.checkStatusCode404) {
+      checkStatusCode404(_name)
     }
   } catch (error) {
     console.error(error);
