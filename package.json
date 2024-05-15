@@ -39,6 +39,7 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.5",
     "@types/fs-extra": "^11.0.4",
+    "@types/inquirer": "^9.0.7",
     "@types/mocha": "^5.0.0",
     "@types/node": "^9.4.5",
     "@types/power-assert": "^1.4.29",
@@ -60,7 +61,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "dev": "rollup -c -w",
+    "dev": "rollup -c -w ",
     "build": "rollup -c",
     "autod": "autod",
     "lint": "eslint . --ext .ts",
