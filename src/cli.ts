@@ -1,13 +1,21 @@
-import { Command } from "commander";
+import { Command } from 'commander';
 
-import create from "./plugins/create";
-import diagnose from "./plugins/diagnose";
-import performance from "./plugins/performance";
-import seo from "./plugins/seo";
+import create from './plugins/create';
+import diagnose from './plugins/diagnose';
+import link from './plugins/link';
+import performance from './plugins/performance';
+import seo from './plugins/seo';
 
 const program = new Command();
 
 const commands = [
+  {
+    name: "link",
+    description: "create a bitou link for https://bitou.tech",
+    option: [["--type", "work type"]],
+    argument: ["<name>", "work name"],
+    action: link,
+  },
   {
     name: "create",
     description: "create a page base on template",

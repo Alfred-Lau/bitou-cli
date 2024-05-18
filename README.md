@@ -13,7 +13,8 @@
 
 ```bash
 1. pnpm install
-2. pnpm start
+2. pnpm dev
+3. npm link
 ```
 
 ## how to use
