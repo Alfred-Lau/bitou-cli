@@ -1,15 +1,15 @@
 # bitou-cli
 
-## functions
+https://datafun.bitou.tech/product/bitou-cli
 
-- seo 排查
-- seo 线上检查
-- 性能探测
-- 脚手架初始化标准页面
+## Overview
 
-## how to dev
+- SEO troubleshooting
+- SEO online inspection
+- Performance detection
+- Scaffolding initialization standard page
 
-- workspaces 是需要在 pnpm install 的时候安装的
+## How to dev
 
 ```bash
 1. pnpm install
@@ -17,7 +17,15 @@
 3. npm link
 ```
 
-## how to use
+## How to use
+
+### installiation
+
+```bash
+cnpm install -g bitou-cli
+```
+
+### usage
 
 ```bash
 Usage: bitou [options] [command]
