@@ -5,6 +5,11 @@ import precheck from './precheck';
 import postcheck from './postcheck';
 import checkStatusCode301 from './functions/301';
 import checkStatusCode404 from './functions/404';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 async function collectData() {
   return [];
