@@ -1,12 +1,13 @@
-import tpl from './tpl';
 import ejs from 'ejs';
 import fse from 'fs-extra';
-import precheck from './precheck';
-import postcheck from './postcheck';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
 import checkStatusCode301 from './functions/301';
 import checkStatusCode404 from './functions/404';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import postcheck from './postcheck';
+import precheck from './precheck';
+import tpl from './tpl';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,7 +23,7 @@ export default async (_name?, _options?, _command?) => {
     const content = ejs.render(tpl, { urls });
     // 生成map 子文件
     fse.writeFileSync(`${__dirname}/tar/static_sitemap.xml`, content, {
-      flag: 'w',
+      flag: "w",
     });
   }
 
@@ -49,10 +50,10 @@ export default async (_name?, _options?, _command?) => {
       sitemapHandler();
     }
     if (_options.checkStatusCode301) {
-      checkStatusCode301(_name)
+      checkStatusCode301(_name);
     }
     if (_options.checkStatusCode404) {
-      checkStatusCode404(_name)
+      checkStatusCode404(_name);
     }
   } catch (error) {
     console.error(error);

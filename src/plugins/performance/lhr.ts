@@ -1,13 +1,13 @@
+import * as chromeLauncher from 'chrome-launcher';
 import fse from 'fs-extra';
 import lighthouse from 'lighthouse';
-import * as chromeLauncher from 'chrome-launcher';
 
 async function calculateLHR(url: string) {
-  const chrome = await chromeLauncher.launch({ chromeFlags: ['--headless'] });
+  const chrome = await chromeLauncher.launch({ chromeFlags: ["--headless"] });
   const options = {
-    logLevel: 'silent',
-    output: 'html',
-    onlyCategories: ['performance'],
+    logLevel: "silent",
+    output: "html",
+    onlyCategories: ["performance"],
     port: chrome.port,
   };
   const runnerResult = await lighthouse(url, options as any);
@@ -18,8 +18,8 @@ async function calculateLHR(url: string) {
     const url = runnerResult.lhr.requestedUrl;
     const score = runnerResult.lhr.categories.performance.score! * 100;
 
-    const reportHtml = runnerResult.report;
-    fse.writeFileSync('lhr_report.html', reportHtml);
+    const reportHtml = runnerResult.report as any;
+    fse.writeFileSync("lhr_report.html", reportHtml);
     const path = `${process.cwd()}/lhr_report.html`;
     const metrics = runnerResult.lhr.audits.metrics.details || ({} as any);
 
@@ -31,10 +31,9 @@ async function calculateLHR(url: string) {
         metrics.items?.[0]?.largestContentfulPaint,
         metrics.items?.[0]?.cumulativeLayoutShift,
         metrics.items?.[0]?.timeToFirstByte,
-      ]
+      ],
     };
   }
-
 }
 
 export default calculateLHR;

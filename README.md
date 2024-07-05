@@ -44,3 +44,7 @@ Commands:
   help [command]            display help for command
 
 ```
+
+### SEO Postcheck
+
+![执行结果](https://render.bitou.tech/imgs/bitoulogo.jpg)
